@@ -22,7 +22,7 @@ export default function Navbar() {
           <span className="bg-yellow-600 rounded-lg px-2 text-lg font-bold">
             IMDB
           </span>
-          <p className="hidden md:inline">Clone</p>
+          <p className="hidden md:inline font-semibold">Clone</p>
         </Link>
       </div>
     </div>
