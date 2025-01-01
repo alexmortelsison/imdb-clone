@@ -3,6 +3,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import React from "react";
 import NavbarItem from "./NavbarItem";
 import Link from "next/link";
+import DarkMode from "./DarkMode";
 
 export default function Navbar() {
   return (
@@ -15,12 +16,13 @@ export default function Navbar() {
           Icon={AiOutlineInfoCircle}
         />
       </div>
-      <div>
+      <div className="flex items-center gap-2">
+        <DarkMode />
         <Link href={"/"} className="flex gap-1 items-center">
           <span className="bg-yellow-600 rounded-lg px-2 text-lg font-bold">
             IMDB
           </span>
-          <p>Clone</p>
+          <p className="hidden md:inline">Clone</p>
         </Link>
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function NavbarItem({ title, address, Icon }) {
       <p>
         <Icon />
       </p>
-      <p>{title}</p>
+      <p className="hidden md:inline">{title}</p>
     </Link>
   );
 }
