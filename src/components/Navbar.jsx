@@ -3,11 +3,11 @@ import { AiOutlineHome } from "react-icons/ai";
 import React from "react";
 import NavbarItem from "./NavbarItem";
 import Link from "next/link";
-import DarkMode from "./DarkMode";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Navbar() {
   return (
-    <div className="flex max-w-6xl mx-auto justify-between p-4">
+    <div className="flex max-w-6xl mx-auto justify-between p-4 select-none">
       <div className="flex gap-4">
         <NavbarItem title="Home" address={"/"} Icon={AiOutlineHome} />
         <NavbarItem
@@ -17,7 +17,7 @@ export default function Navbar() {
         />
       </div>
       <div className="flex items-center gap-2">
-        <DarkMode />
+        <DarkModeSwitch />
         <Link href={"/"} className="flex gap-1 items-center">
           <span className="bg-yellow-600 rounded-lg px-2 text-lg font-bold">
             IMDB
