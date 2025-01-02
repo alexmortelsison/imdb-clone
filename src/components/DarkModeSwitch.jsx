@@ -1,16 +1,17 @@
 "use client";
+import { BiMoon } from "react-icons/bi";
+import { BiSun } from "react-icons/bi";
 import { useTheme } from "next-themes";
-import React, { useState } from "react";
-import { AiFillMoon, AiFillSun } from "react-icons/ai";
+import React from "react";
 
 export default function DarkModeSwitch() {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="hover:text-yellow-600 hover:cursor-pointer">
+    <div className="hover:text-amber-600 hover:cursor-pointer">
       {theme === "dark" ? (
-        <AiFillSun onClick={() => setTheme("light")} />
+        <BiSun onClick={() => setTheme("light")} />
       ) : (
-        <AiFillMoon onClick={() => setTheme("dark")} />
+        <BiMoon onClick={() => setTheme("dark")} />
       )}
     </div>
   );
