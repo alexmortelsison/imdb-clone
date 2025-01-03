@@ -6,7 +6,7 @@ export default function Error({ error, reset }) {
     console.log(error);
   }, [error]);
   return (
-    <div>
+    <div className="text-center mt-10">
       <h1>Something went wrong. Please try again.</h1>
       <button onClick={() => reset()}>Try Again</button>
     </div>
